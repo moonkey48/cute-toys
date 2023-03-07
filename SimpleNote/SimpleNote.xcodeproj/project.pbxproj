@@ -16,6 +16,8 @@
 		9589B84B29B70AD3008B6838 /* SimpleNoteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9589B84A29B70AD3008B6838 /* SimpleNoteTests.swift */; };
 		9589B85529B70AD3008B6838 /* SimpleNoteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9589B85429B70AD3008B6838 /* SimpleNoteUITests.swift */; };
 		9589B85729B70AD3008B6838 /* SimpleNoteUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9589B85629B70AD3008B6838 /* SimpleNoteUITestsLaunchTests.swift */; };
+		9589B86829B711D3008B6838 /* MemoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9589B86729B711D3008B6838 /* MemoCell.swift */; };
+		9589B86B29B7157E008B6838 /* MemoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9589B86A29B7157E008B6838 /* MemoManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		9589B85029B70AD3008B6838 /* SimpleNoteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleNoteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9589B85429B70AD3008B6838 /* SimpleNoteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleNoteUITests.swift; sourceTree = "<group>"; };
 		9589B85629B70AD3008B6838 /* SimpleNoteUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleNoteUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9589B86729B711D3008B6838 /* MemoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoCell.swift; sourceTree = "<group>"; };
+		9589B86A29B7157E008B6838 /* MemoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,8 +105,9 @@
 			children = (
 				9589B83329B70AD1008B6838 /* AppDelegate.swift */,
 				9589B83529B70AD1008B6838 /* SceneDelegate.swift */,
-				9589B83729B70AD1008B6838 /* ViewController.swift */,
-				9589B83929B70AD1008B6838 /* Main.storyboard */,
+				9589B86929B71569008B6838 /* Model */,
+				9589B86429B71131008B6838 /* Controller */,
+				9589B86329B71126008B6838 /* View */,
 				9589B83C29B70AD2008B6838 /* Assets.xcassets */,
 				9589B83E29B70AD2008B6838 /* LaunchScreen.storyboard */,
 				9589B84129B70AD2008B6838 /* Info.plist */,
@@ -125,6 +130,31 @@
 				9589B85629B70AD3008B6838 /* SimpleNoteUITestsLaunchTests.swift */,
 			);
 			path = SimpleNoteUITests;
+			sourceTree = "<group>";
+		};
+		9589B86329B71126008B6838 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9589B83929B70AD1008B6838 /* Main.storyboard */,
+				9589B86729B711D3008B6838 /* MemoCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9589B86429B71131008B6838 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9589B83729B70AD1008B6838 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9589B86929B71569008B6838 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9589B86A29B7157E008B6838 /* MemoManager.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,6 +291,8 @@
 				9589B83829B70AD1008B6838 /* ViewController.swift in Sources */,
 				9589B83429B70AD1008B6838 /* AppDelegate.swift in Sources */,
 				9589B83629B70AD1008B6838 /* SceneDelegate.swift in Sources */,
+				9589B86829B711D3008B6838 /* MemoCell.swift in Sources */,
+				9589B86B29B7157E008B6838 /* MemoManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
